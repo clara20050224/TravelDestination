@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom tambahan (opsional) */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8ff;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌍 Custom styles */
+body {
+  @apply bg-gradient-to-b from-blue-100 via-white to-pink-100 
+         min-h-screen font-sans text-gray-800;
+}
+
+/* Header Styling */
+header {
+  @apply bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg;
+}
+
+/* Destination Card Styling */
+.destination-card {
+  @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300
+         transform hover:scale-105 cursor-pointer;
+}
+
+/* Image styling */
+.destination-card img {
+  @apply w-full h-48 object-cover rounded-t-2xl;
+}
+
+/* Destination Title */
+.destination-title {
+  @apply text-lg font-semibold text-gray-800 mt-3 mb-1;
+}
+
+/* Destination Country */
+.destination-country {
+  @apply text-sm text-gray-500;
+}
+
+/* Active Card (Selected Destination) */
+.active-card {
+  @apply ring-4 ring-blue-400;
+}
+
+/* Detail Section */
+.destination-detail {
+  @apply bg-white p-6 rounded-2xl shadow-xl mt-6 animate-fadeIn;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Button Style */
+.button-primary {
+  @apply bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md 
+         transition duration-300 ease-in-out;
+}
+
+/* Responsive grid for DestinationList */
+.grid-destinations {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6;
+}
+
+/* Footer (optional aesthetic) */
+footer {
+  @apply text-center text-gray-500 text-sm mt-10 pb-6;
+}
